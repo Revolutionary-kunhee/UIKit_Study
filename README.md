@@ -32,3 +32,26 @@
 - #imageLiteral() 사용법
 - 코드 및 assets는 빌드(command + B)하면 저장됨
 - array.randomElement()
+
+---
+
+### 기초 앱 3
+
+24.02.14 학습 완료
+
+<div style="display: flex;">
+    <img src="README_Image/Rps1.png" style="width: 30%; margin-right: 10px;">
+    <img src="README_Image/Rps2.png" style="width: 30%; margin-right: 10px;">
+    <img src="README_Image/Rps3.png" style="width: 30%; margin-right: 10px;">
+</div>
+
+<b>학습 내용<b/>
+
+- UIimage(named:)
+- 알림창 사용
+
+추가로 학습해야하는 부분
+
+1. UIColor
+2. Errer haddling
+3. 알림창 띄우기

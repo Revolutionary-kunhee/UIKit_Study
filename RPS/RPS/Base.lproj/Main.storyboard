@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="kXS-nE-fd8">
-                                <rect key="frame" x="20" y="284" width="353" height="261"/>
+                                <rect key="frame" x="20" y="224" width="353" height="261"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lfQ-3R-JV3">
                                         <rect key="frame" x="0.0" y="0.0" width="171" height="261"/>
@@ -91,7 +91,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="VAV-7B-Feb">
-                                <rect key="frame" x="20" y="585" width="353" height="99.666666666666629"/>
+                                <rect key="frame" x="20" y="525" width="353" height="99.666666666666629"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJd-zr-0bC">
                                         <rect key="frame" x="0.0" y="0.0" width="99.666666666666671" height="99.666666666666671"/>
@@ -104,6 +104,9 @@
                                         <state key="normal" title="가위">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rpsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rea-AB-XeM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQR-t7-fHA">
                                         <rect key="frame" x="126.66666666666666" y="0.0" width="99.666666666666657" height="99.666666666666671"/>
@@ -113,6 +116,9 @@
                                         <state key="normal" title="바위">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rpsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f8C-yA-D3a"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9c-Ua-H5b">
                                         <rect key="frame" x="253.33333333333329" y="0.0" width="99.666666666666657" height="99.666666666666671"/>
@@ -122,29 +128,42 @@
                                         <state key="normal" title="보">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rpsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WeT-Le-bgd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Aa0-6f-fst">
-                                <rect key="frame" x="20" y="704.66666666666663" width="353" height="45"/>
+                                <rect key="frame" x="20" y="644.66666666666663" width="353" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGK-kA-kg3">
                                         <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="45"/>
                                         <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="RESET">
+                                        <state key="normal" title="판 엎기">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iuL-dI-VI5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqZ-34-XZ0">
                                         <rect key="frame" x="181.66666666666663" y="0.0" width="171.33333333333337" height="45"/>
                                         <color key="backgroundColor" systemColor="tintColor"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="RESET">
+                                        <state key="normal" title="안내면 진거!  가위 바위 보!">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <buttonConfiguration key="configuration" style="plain" title="안내면 진거!  가위 바위 보!">
+                                            <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eIv-Ex-2iN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -164,10 +183,20 @@
                             <constraint firstItem="kwi-Tx-Hd1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="m3k-9p-b7C"/>
                             <constraint firstItem="VAV-7B-Feb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="n6F-Vn-Mmf"/>
                             <constraint firstItem="kwi-Tx-Hd1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qXS-rr-BTc"/>
-                            <constraint firstItem="kXS-nE-fd8" firstAttribute="top" secondItem="kwi-Tx-Hd1" secondAttribute="bottom" constant="110" id="rhf-tu-gYh"/>
+                            <constraint firstItem="kXS-nE-fd8" firstAttribute="top" secondItem="kwi-Tx-Hd1" secondAttribute="bottom" constant="50" id="rhf-tu-gYh"/>
                             <constraint firstItem="Aa0-6f-fst" firstAttribute="top" secondItem="VAV-7B-Feb" secondAttribute="bottom" constant="20" id="xYk-Mq-OAp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="comChoiceLabel" destination="LbY-hN-9vE" id="3cy-32-0xl"/>
+                        <outlet property="comImageView" destination="rQv-sR-xE1" id="Zki-Yo-ydY"/>
+                        <outlet property="mainLabel" destination="kwi-Tx-Hd1" id="ryT-sb-pRo"/>
+                        <outlet property="myChoiceLabel" destination="2vn-kt-LDp" id="IEq-pO-nud"/>
+                        <outlet property="myImageView" destination="azh-G2-cmN" id="wbW-Mn-mtt"/>
+                        <outlet property="paperButton" destination="b9c-Ua-H5b" id="ojs-Gd-k73"/>
+                        <outlet property="rockButton" destination="nQR-t7-fHA" id="cRa-Go-XXV"/>
+                        <outlet property="scissorButton" destination="eJd-zr-0bC" id="POq-RZ-aH7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
