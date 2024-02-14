@@ -48,7 +48,4 @@ class ViewController: UIViewController {
         numberLabel.text = ""
         computerNumber = Int.random(in: 1...10)
     }
-    
-    
-    
 }

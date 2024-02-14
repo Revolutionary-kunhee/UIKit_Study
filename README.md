@@ -55,3 +55,15 @@
 1. UIColor
 2. Errer haddling
 3. 알림창 띄우기
+
+---
+
+### 기초앱 4,5
+
+24.02.14 학습 완료
+
+<img src="README_Image/Bingo.png">
+
+추가로 학습해야하는 부분
+
+1. ARC
